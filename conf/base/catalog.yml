@@ -1,0 +1,24 @@
+dataset_kobe_dev:
+  type: pandas.ParquetDataset
+  filepath: data/01_raw/dataset_kobe_dev.parquet
+
+data_filtered:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/data_filtered.parquet
+
+base_train:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/base_train.parquet
+
+base_test:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/base_test.parquet
+
+
+modelo_logistica:
+  type: pickle.PickleDataset
+  filepath: data/06_models/modelo_logistica.pkl
+
+modelo_arvore:
+  type: pickle.PickleDataset
+  filepath: data/06_models/modelo_arvore.pkl
