@@ -6,13 +6,14 @@ data_filtered:
   type: pandas.ParquetDataset
   filepath: data/02_intermediate/data_filtered.parquet
 
+
 base_train:
   type: pandas.ParquetDataset
-  filepath: data/03_primary/base_train.parquet
+  filepath: data/processed/base_train.parquet
 
 base_test:
   type: pandas.ParquetDataset
-  filepath: data/03_primary/base_test.parquet
+  filepath: data/processed/base_test.parquet
 
 
 modelo_logistica:

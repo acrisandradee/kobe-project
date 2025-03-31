@@ -10,9 +10,10 @@ def create_pipeline(**kwargs) -> Pipeline:
             name="preparar_dados_node"
         ),
         node(
-            func=split_data,
-            inputs="data_filtered",
-            outputs=["base_train", "base_test"],
-            name="split_data_node"
-        )
+    func=split_data,
+    inputs="data_filtered",
+    outputs=["base_train", "base_test"],
+    name="split_data_node"
+)
+
     ])
