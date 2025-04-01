@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/Cristina/Desktop/projetoEngML/kobe-project/notebooks/mlruns/0/9ead654a81484131a7d558b4e9fa6e75/artifacts
+end_time: 1743467760278
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9ead654a81484131a7d558b4e9fa6e75
+run_name: Treinamento
+run_uuid: 9ead654a81484131a7d558b4e9fa6e75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743467707094
+status: 3
+tags: []
+user_id: Cristina

@@ -1,24 +1,26 @@
-from kedro.pipeline import Pipeline, node, pipeline
-from .nodes import treinar_logistica, treinar_arvore, avaliar_modelo
+# src/kobe_project/pipelines/treinamento/pipeline.py
+from kedro.pipeline import Pipeline, node
+from .nodes import configurar_pycaret, treinar_modelos_e_avaliar, plotar_roc
+import mlflow
 
-def create_pipeline(**kwargs) -> Pipeline:
-    return pipeline([
+def create_pipeline(**kwargs):
+    return Pipeline([
         node(
-            func=treinar_logistica,
-            inputs=["base_train", "base_test"],
-            outputs="predicoes_logistica",
-            name="treinar_logistica_node"
-        ),
-        node(
-            func=treinar_arvore,
-            inputs=["base_train", "base_test"],
-            outputs="predicoes_arvore",
-            name="treinar_arvore_node"
-        ),
-        node(
-            func=avaliar_modelo,
-            inputs="predicoes_arvore",  # ou "predicoes_logistica", se quiser avaliar o outro
+            func=_pipeline_treinamento,
+            inputs=["base_train", "base_test"],  # do catalog.yml
             outputs=None,
-            name="avaliar_modelo_node"
+            name="pipeline_treinamento_node"
         ),
     ])
+
+def _pipeline_treinamento(df_train, df_test):
+    # Abre um run do MLflow
+    with mlflow.start_run(run_name="Treinamento"):
+        # 1) Configura PyCaret
+        configurar_pycaret(df_train, target_col="shot_made_flag", random_state=42)
+
+        # 2) Treina modelos e avalia
+        metrics_dict = treinar_modelos_e_avaliar(df_test)
+
+        # 3) Plota a curva ROC
+        plotar_roc(metrics_dict)
