@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/Cristina/Desktop/projetoEngML/kobe-project/notebooks/mlruns/0/7803bb0c58e74e8693a07c3931c98c83/artifacts
+end_time: 1743640996819
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7803bb0c58e74e8693a07c3931c98c83
+run_name: MelhorModeloComPrints
+run_uuid: 7803bb0c58e74e8693a07c3931c98c83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743640996738
+status: 4
+tags: []
+user_id: Cristina

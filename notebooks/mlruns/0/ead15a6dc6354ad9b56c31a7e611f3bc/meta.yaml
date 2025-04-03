@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/Cristina/Desktop/projetoEngML/kobe-project/notebooks/mlruns/0/ead15a6dc6354ad9b56c31a7e611f3bc/artifacts
+end_time: 1743629111068
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ead15a6dc6354ad9b56c31a7e611f3bc
+run_name: Treinamento_LR_DT_Tunado
+run_uuid: ead15a6dc6354ad9b56c31a7e611f3bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743629090056
+status: 3
+tags: []
+user_id: Cristina

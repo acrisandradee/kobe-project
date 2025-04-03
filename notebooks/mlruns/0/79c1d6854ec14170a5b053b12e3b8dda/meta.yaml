@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/Cristina/Desktop/projetoEngML/kobe-project/notebooks/mlruns/0/79c1d6854ec14170a5b053b12e3b8dda/artifacts
+end_time: 1743625729213
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 79c1d6854ec14170a5b053b12e3b8dda
+run_name: PipelineAplicacao
+run_uuid: 79c1d6854ec14170a5b053b12e3b8dda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743625729141
+status: 4
+tags: []
+user_id: Cristina

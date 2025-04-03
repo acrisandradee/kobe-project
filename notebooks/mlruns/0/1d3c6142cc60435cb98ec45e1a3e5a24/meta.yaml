@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/Cristina/Desktop/projetoEngML/kobe-project/notebooks/mlruns/0/1d3c6142cc60435cb98ec45e1a3e5a24/artifacts
+end_time: 1743615732728
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1d3c6142cc60435cb98ec45e1a3e5a24
+run_name: PreparacaoDados
+run_uuid: 1d3c6142cc60435cb98ec45e1a3e5a24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743615732576
+status: 3
+tags: []
+user_id: Cristina
